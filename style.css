@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik:wght@500&family=Rufina:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --back: #152136;
+    --nav-back: #121d30;
+    --grey: #858e9e;
+    --red: #ff4a57;
+    --card-back: #19273e;
+    --btn-arrow-back: #1e2d47;
+}
+
+body {
+    background-color: var(--back);
+}
+
+.navback {
+    background-color: var(--nav-back);
+}
+
+.tag-line {
+    font-size: 16pt;
+    color: var(--grey);
+    font-family: 'Rubik';
+}
+
+.myname {
+    font-family: 'Rufina';
+    font-size: 70pt;
+}
+
+.btn-do {
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--red);
+    color: white;
+    font-family: 'Rubik';
+    font-size: 10pt;
+    letter-spacing: 2px;
+    width: 180px;
+    height: 50px;
+}
+
+.btn-start {
+    outline: none;
+    border: none;
+    background-color: var(--red);
+    color: white;
+    font-family: 'Rubik';
+    font-size: 10pt;
+    letter-spacing: 2px;
+    width: 180px;
+    height: 50px;
+}
+
+.btn-play {
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #8cc090;
+    color: white;
+}
+
+.btn-arrow {
+    /* margin-left: 10px; */
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--btn-arrow-back);
+    font-family: 'Rubik';
+    color: rgb(207, 206, 206);
+    padding: 10px 10px;
+}
+
+.para-profile {
+    color: var(--red);
+    letter-spacing: 4px;
+    font-family: 'Rubik';
+}
+
+.heading-aboutme {
+    font-size: 80px;
+    color: white;
+    font-family: 'Rufina';
+}
+
+.letter-spacing {
+    letter-spacing: 4px;
+}
+
+.profile-rufina {
+    font-family: 'Rufina';
+    font-size: 26px;
+}
+
+.my-red {
+    color: var(--red);
+}
+
+.rubik {
+    font-family: 'rubik';
+}
+
+.rufina {
+    font-family: 'Rufina';
+}
+
+.services {
+    font-size: 13pt;
+}
+
+.what-i-do {
+    font-size: 45pt;
+}
+
+.mt-10 {
+    margin-top: 200px;
+}
+
+.card-back {
+    background-color: var(--card-back);
+}
+
+.pb-10 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.work-together {
+    background: url('images/work-together.jpg');
+    background-size: cover;
+    overflow: hidden;
+    background-color: rgba(4, 4, 4, 0.8);
+    background-blend-mode: soft-light;
+    width: 95%;
+    height: 500px;
+}
+
+.institution, .skills {
+    color: #8cc090;
+}
+
+.qual {
+    border-top: 2px solid var(--grey);
+    border-bottom: 2px solid var(--grey);
+    transition: all 0.5s;
+    width: 100%;
+}
+
+.qual:hover {
+    border-color: red;
+}
+
+.skill-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: -1px 4px 19px -5px white;
+}
+
+.carousel{
+    width: 70%;
+}
+
+.carousel .carousel-item img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.testimonial{
+    font-size: 18pt;
+}
+
+.txt{
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--grey);
+    color: white;
+}
+.txt::placeholder{
+    padding-left: 15px;
+    font-family: 'Rubik';
+}
+
+.footer{
+    background-color: var(--card-back);
+    width: 100%;
+    padding: 20px 0px;
+    color: var(--grey);
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    margin-top: 50px;
+}
