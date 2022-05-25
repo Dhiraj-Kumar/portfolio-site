@@ -137,6 +137,10 @@ body {
     padding-bottom: 80px;
 }
 
+.pt{
+    padding-top: 100px;
+}
+
 .work-together {
     background: url('images/work-together.jpg');
     background-size: cover;

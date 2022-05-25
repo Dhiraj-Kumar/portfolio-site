@@ -17,6 +17,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -85,7 +86,7 @@
     </nav>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-6 d-flex flex-column justify-content-center offset-md-1 text-light">
+            <div id="intro" class="col-md-6 d-flex flex-column justify-content-center offset-md-1 text-light">
                 <p class="tag-line">Software Development, Training And Digital Experience</p>
                 <h1 class="myname">Dhiraj Kumar</h1>
                 <div class="d-flex">
@@ -94,16 +95,17 @@
                 </div>
             </div>
             <div class="col-md-4 text-light">
-                <img src="images/me.png" style="max-width: 140%;" alt="me">
-            </div>
+                <img id="me" src="images/me.png" style="max-width: 140%;" alt="me">
+            </div>            
         </div>
     </div>
-    <div id="about" class="container-fluid">
-        <div class="row py-5 navback">
-            <div class="offset-md-2 col-md-3">
+    
+    <div class="container-fluid">
+        <div class="row pt navback">
+            <div id="me2" class="offset-md-2 col-md-3">
                 <img src="images/me2.jpg" width="400" alt="">
             </div>
-            <div class="col-md-5 d-flex flex-column">
+            <div id="profile" class="col-md-5 d-flex flex-column">
                 <p class="para-profile">PROFESSIONAL PROFILE</p>
                 <h1 class="heading-aboutme">There Is All About Me</h1>
                 <div class="container">
@@ -237,7 +239,7 @@
     <div class="container-fluid navback py-2">
         <div class="container mt-10">
             <div class="row">
-                <div class="col-md-6">
+                <div id="iamhere" class="col-md-6">
                     <div class="work-together py-5 px-4">
                         <p class="text-danger rubik letter-spacing services">I AM HERE</p>
                         <h1 class="text-light rufina">Let's Work Together In Your Next Training Project</h1>
@@ -253,7 +255,7 @@
                         <button class="btn-start">START TODAY</button>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div id="challenge" class="col-md-6">
                     <h1 class="text-light rufina mb-5" style="font-size: 50px;">Every Day is a New Challenge For Me</h1>
                     <span class="text-secondary">IT Trainings</span>
                     <div class="progress mt-3 mb-3">
@@ -293,7 +295,7 @@
                 <div class="card card-back">
                     <div class="qual">
                         <div class="card-body pb-5 px-5 text-center">
-                            <p class="py-3"><i class="fa-solid fa-award text-danger fa-4x"></i></p>
+                            <p class="py-3"><i class="fa-solid fa-graduation-cap text-danger fa-4x"></i></p>
                             <h3 class="card-title text-light rufina">Bachelor Degree in Arts Program</h3>
                             <p class="institution rubik">University of Delhi</p>
                             <!-- <p class="card-text rubik text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p> -->
@@ -305,7 +307,7 @@
                 <div class="card card-back">
                     <div class="qual">
                         <div class="card-body pb-5 px-5 text-center">
-                            <p class="py-3"><i class="fa-solid fa-award text-danger fa-4x"></i></p>
+                            <p class="py-3"><i class="fa-solid fa-graduation-cap text-danger fa-4x"></i></p>
                             <h3 class="card-title text-light rufina">Higher Diploma in Software Engineering</h3>
                             <p class="institution rubik">Aptech Computer Education</p>
                             <!-- <p class="card-text rubik text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p> -->
@@ -317,7 +319,7 @@
                 <div class="card card-back">
                     <div class="qual">
                         <div class="card-body pb-5 px-5 text-center">
-                            <p class="py-3"><i class="fa-solid fa-award text-danger fa-4x"></i></p>
+                            <p class="py-3"><i class="fa-solid fa-graduation-cap text-danger fa-4x"></i></p>
                             <h3 class="card-title text-light rufina">Masters of Computer Application</h3>
                             <p class="institution rubik">Sikkim Manipal University</p>
                             <!-- <p class="card-text rubik text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p> -->
@@ -334,7 +336,7 @@
                 <h2 class="text-danger rubik letter-spacing text-center services mb-4">TECHNICAL SKILLS</h2>
             </div>
         </div>
-        <div class="row text-center py-5">
+        <div id="skillrow1" class="row text-center py-5">
             <div class="col-md-2">
                 <h5 class="text-secondary rubik">HTML5</h5>
                 <div class="progress">
@@ -383,7 +385,7 @@
                 <hr width="100%" size="4" style="color: white;" />
             </div>
         </div>
-        <div class="row text-center py-5">
+        <div id="skillrow2" class="row text-center py-5">
             <div class="col-md-2">
                 <h5 class="text-secondary rubik">MICROSOFT .NET</h5>
                 <div class="progress">
@@ -432,7 +434,7 @@
                 <hr width="100%" size="4" style="color: white;" />
             </div>
         </div>
-        <div class="row text-center py-5">
+        <div id="skillrow3" class="row text-center py-5">
             <div class="col-md-2">
                 <h5 class="text-secondary rubik">SQL SERVER</h5>
                 <div class="progress">
@@ -637,19 +639,20 @@
     </div>
     <div class="footer">Copyright @2022 Dhiraj Kumar. All Rights Reserved Copyright</div>
     <script>
-        window.onscroll = function() {myFunction()};
-        
+        window.onscroll = function () { myFunction() };
+
         var navbar = document.getElementById("mynavbar");
         var sticky = navbar.offsetTop;
-        
+
         function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
         }
-        </script>
+    </script>
+    <script src="reveal.js"></script>
 </body>
 
 </html>
